@@ -45,3 +45,15 @@ li, a, button {
     cursor: url(images/iconmonstr-cursor-5-24.png), auto;
     transition: all 0.3s ease 0s;
 }
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(21, 128, 228, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(21, 128, 228, 0.6);
+}
