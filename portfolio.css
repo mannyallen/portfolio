@@ -1,52 +1,68 @@
 /*ALL IMPORTS*/
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
-
-
-
 /*NAV BAR*/
-*{
+
+body, html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: gray;
-    cursor: url(images//iconmonstr-cursor-4-24.png), auto;
+    color: #ffffff;
+    cursor: url(images/icons/iconmonstr-cursor-4-24.png), auto;
+    font-family: 'Work Sans', sans-serif;
+    font size: 16px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.8em;
+    height: 100%;
+}
+
+header {
+    background: rgba(134, 134, 134, 0.6);
 }
 
 li, a, button {
-    font-family:'Work Sans', sans-serif;
-    font-weight:800;
-    font size:16px;
-    color: rgb(255,255,255) ;
+    font size: 16px;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 .navcont {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 15px 10%;
 }
 
-.navlinks{
+.navlinks {
     list-style: none;
 }
 
-.navlinks li{
+.navlinks li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.navlinks li a{
+.navlinks li a {
     transition: all 0.3s ease 0s;
 }
 
-.navlinks li a:hover{
+.navlinks li a:hover {
     color: rgb(21, 128, 228);
-    cursor: url(images/iconmonstr-cursor-5-24.png), auto;
+    cursor: url(images/icons/iconmonstr-cursor-5-24.png), auto;
     transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:active {
+    text-shadow: 0px 0px 5px white;
+}
+
+.navlinks li a:focus {
+    text-shadow: 0px 0px 5px rgba(21, 128, 228, 1);
 }
 
 button {
+    margin-left: 20px;
     padding: 9px 25px;
     background-color: rgba(21, 128, 228, 1);
     border: none;
@@ -56,4 +72,58 @@ button {
 
 button:hover {
     background-color: rgba(21, 128, 228, 0.6);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    cursor: url(images/icons/iconmonstr-cursor-5-24.png), auto;
+}
+
+button:active {
+    background-color: white;
+    box-shadow: white;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px white;
+}
+
+/*END OF NAVBAR*/
+
+.pimg1 {
+    background-image: url(images/beasty-hktkNOBN8y8-unsplash.jpg);
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: url(images/patrick-tomasso-VT8IGxMAgp0-unsplash.jpg);
+    min-height: 400px;
+}
+
+.pimg3 {
+    background-image: url(images/laura-gilchrist-km_T0yIqfwg-unsplash.jpg);
+    min-height: 400px;
+}
+
+.pimg1, .pimg2, .pimg3 {
+    position: relative;
+    opacity: 0.70;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.section{
+    text-align: center ;
+    padding: 50px 80px;
+
+}
+
+.section-1{
+    background-color: rgba(21, 128, 228, 0.6);
+    background-image: url(images/denys-nevozhai-ximaoISHL5Q-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+    
 }
